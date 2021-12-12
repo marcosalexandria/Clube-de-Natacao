@@ -17,4 +17,16 @@ const tratandoONome=(nome)=>{
         console.log(traco);
     }
 }
-tratandoONome("Marcos Santos de Alexandria")
+const categoria=(idade)=>{
+    //Manipulando o paramentro idade para mostrar a categoria do sujeito.
+    if(idade<=12){
+        console.log(`Você tem ${idade} anos, sua categoria é: INFANTIL!`);
+    }else if(idade>12&&idade<18){
+        console.log(`Você tem ${idade} anos, sua categoria é: JUVENIL!`);
+    }else if(idade>=18){
+        console.log(`Você tem ${idade} anos, sua categoria é: ADULTA!`);
+    }
+}
+
+tratandoONome("Marcos Santos de Alexandria");
+categoria(12);
